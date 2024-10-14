@@ -1,0 +1,1 @@
+I was messing around a bit with fitting a hierarchical model so I can see how it works, and I figured I might as well upload it here. It's not done yet as of writing this but I plan to add some visualisation and then run a few different scenarios.
