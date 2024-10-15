@@ -69,5 +69,4 @@ if __name__ == '__main__':
 
     post_sample = run_model(bearKillsdf)
     az.to_netcdf(post_sample, "posterior_data.nc")
-get_accept = 0.95, init='adapt_diag')
     
