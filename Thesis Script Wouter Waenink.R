@@ -1,4 +1,4 @@
-#this is the main script form my thesis, where I looked at spatial and temporal avoidance between American mink and Eurasian otter, red fox and pine marten on holmöarna in västerbotten (Sweden)
+#this is the main script form my thesis, where I looked at spatial and temporal avoidance between American mink and Eurasian otter, red fox and pine marten on Holmöarna in Västerbotten (Sweden)
 #unfortunately I am unable to share the accompanying data, since it is the property of Svenska Jägareförbundet.
 
 ####set up workspace and packages####
@@ -1086,3 +1086,4 @@ obsSitePerYear <- pivot_wider(siteDistFram, names_from = timestamp, values_from 
 
 relSiteObserved <- obsSitePerYear %>% 
   mutate(`2019` = (`2019`/camsDeplYears$`2019`)*100, `2020` = (`2020`/camsDeplYears$`2020`)*100, `2021` = (`2021`/camsDeplYears$`2021`)*100, `2022` = (`2022`/camsDeplYears$`2022`)*100, `2023` = (`2023`/camsDeplYears$`2023`)*100)
+
