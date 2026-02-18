@@ -1,7 +1,6 @@
 #This is my main script form my internship where I investigated the effect of artificial light at night on stone and pine marten. In the end I settled on a resource selection function to see if they had a bias for locations with more or less light, taking into account whether there is cover around.
 #unfortunately I cannot provide the data that is meant to accompany this script since it's owned by a small consultancy agency and I am not allowed to share it.
-#this script might seem a little weird in places - that's because it's a cleaned up version of a script where I was exploring the data at first. As such it may load more packages than it actually needs, and though I think I have simplified it as much as possible it may still do some things that are a little unecessary in places where it was meant to be linked to a block of code that was deleted.
-
+#this script might seem a little weird in places - that's because it's a cleaned up version of a script where I was exploring the data at first. As such it may load more packages than it actually needs, and though I think I have simplified it as much as possible it may still do some things that are a little unecessary in places where it was meant to be linked to a block of code that was deleted. I have since stopped doing data exploration and manipulation in the same script
 
 #functions MASS: dplyr functions not working because of MASS dominance, add "dplyr::[function]
 #install pacman
@@ -309,4 +308,5 @@ for(i in 1:length(AKDEhomeranges)){
 plot(Effect(focal.predictors = c("cover","rivmlicht"), mod = rsfclassified))
 #checking base values
 head(test$`scale(rivmlicht):layer`$model.matrix)
+
 
